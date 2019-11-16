@@ -43,7 +43,7 @@ class DemoSeeder extends Seeder
 
         $drill = Tool::create([
             'name' => 'Drill',
-            'rfid' => 'C07DFEA',
+            'rfid' => 'c07dfea7',
             'last_place_id' => $car->id,
             'last_place_updated_at' => Carbon::now()->subMinutes(rand(0, 10000)),
             'current_place_id' => $workshop->id,
@@ -52,7 +52,7 @@ class DemoSeeder extends Seeder
 
         $saw = Tool::create([
             'name' => 'Saw',
-            'rfid' => '86E5836',
+            'rfid' => '86e58363',
             'last_place_id' => $workshop->id,
             'last_place_updated_at' => Carbon::now()->subMinutes(rand(0, 10000)),
             'current_place_id' => $car->id,
