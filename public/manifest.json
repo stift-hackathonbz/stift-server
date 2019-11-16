@@ -1,0 +1,16 @@
+{
+    "short_name": "Stift",
+    "name": "Stift - Digital assistant for artisans",
+    "icons": [
+        {
+            "src": "/img/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#97266D",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#97266D"
+}

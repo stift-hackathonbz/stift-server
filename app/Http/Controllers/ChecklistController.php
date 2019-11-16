@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Tool;
+use App\Checklist;
 
-class HomeController extends Controller
+class ChecklistController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,11 +24,9 @@ class HomeController extends Controller
     public function index()
     {
         // TODO: Check for user
-        $tools = Tool::with(['lastPlace', 'currentPlace'])
-            ->orderBy('current_place_updated_at', 'desc')
-            ->limit(20)
-            ->get();
+        $checklist = Checklist::with(['tools', 'tools.lastPlace', 'tools.currentPlace'])
+            ->first();
 
-        return view('inventory', ['tools' => $tools]);
+        return view('checklist', ['checklist' => $checklist]);
     }
 }

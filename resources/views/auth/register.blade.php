@@ -64,13 +64,13 @@
                         </div>
 
                         <div class="flex flex-wrap">
-                            <button type="submit" class="inline-block align-middle text-center select-none border font-bold whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700">
+                            <button type="submit" class="inline-block align-middle text-center select-none border font-bold whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-pink-500 hover:bg-pink-700">
                                 {{ __('Register') }}
                             </button>
 
                             <p class="w-full text-xs text-center text-gray-700 mt-8 -mb-4">
                                 {{ __('Already have an account?') }}
-                                <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
+                                <a class="text-pink-500 hover:text-pink-700 no-underline" href="{{ route('login') }}">
                                     {{ __('Login') }}
                                 </a>
                             </p>
