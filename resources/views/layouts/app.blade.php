@@ -50,7 +50,7 @@
                     </div>
                     @if (Auth::check())
                     <div class="text-left">
-                        <a href="{{ route('home') }}" class="no-underline hover:underline text-sm p-3 text-gray-300 {{ request()->is('home') ? 'font-bold' : '' }}">{{ __('Inventory') }}</a>
+                        <a href="{{ route('inventory') }}" class="no-underline hover:underline text-sm p-3 text-gray-300 {{ request()->is('inventory') ? 'font-bold' : '' }}">{{ __('Inventory') }}</a>
                         <a href="{{ route('checklist') }}" class="no-underline hover:underline text-sm p-3 text-gray-300 {{ request()->is('checklist') ? ' font-bold' : '' }}">{{ __('Checklist') }}</a>
                     </div>
                     @endif

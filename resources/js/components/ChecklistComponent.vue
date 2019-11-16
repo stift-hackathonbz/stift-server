@@ -4,7 +4,7 @@
             <div class="max-w-2xl w-full sm:w-full lg:w-full py-6 px-3">
                 <div class="bg-blue-100 border border-blue-500 text-blue-700 px-4 py-3 mb-4" role="alert">
                     <p class="font-bold">Personal checklist</p>
-                    <p class="text-sm">You personal checklist to not forget your tools.</p>
+                    <p class="text-sm">Your personal checklist to not forget any tool.</p>
                 </div>
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden">
                     <div class="p-4">

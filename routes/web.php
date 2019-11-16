@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes(['verify' => true, 'register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/inventory', 'InventoryController@index')->name('inventory');
 Route::get('/checklist', 'ChecklistController@index')->name('checklist');

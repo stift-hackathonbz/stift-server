@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+use App\Tool;
+
+class InventoryController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,8 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // TODO: Check for user and add data
+        // TODO: Check for user
+        $tools = Tool::with(['lastPlace', 'currentPlace'])
+            ->orderBy('current_place_updated_at', 'desc')
+            ->limit(20)
+            ->get();
 
-        return view('home');
+        return view('inventory', ['tools' => $tools]);
     }
 }

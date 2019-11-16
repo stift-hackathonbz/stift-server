@@ -3,8 +3,8 @@
         <div class="flex items-center justify-center">
             <div class="max-w-2xl w-full sm:w-full lg:w-full py-6 px-3">
                 <div class="bg-blue-100 border border-blue-500 text-blue-700 px-4 py-3 mb-4" role="alert">
-                    <p class="font-bold">All your inventory</p>
-                    <p class="text-sm">Here you see all your tools.</p>
+                    <p class="font-bold">Your inventory</p>
+                    <p class="text-sm">All your tools.</p>
                 </div>
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden">
                     <div class="p-4">
