@@ -9,8 +9,8 @@ use App\Services\PushyAPI;
 class PushController extends Controller
 {
     /**
-     * @param $rfid
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function store()
     {

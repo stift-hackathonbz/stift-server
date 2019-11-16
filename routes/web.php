@@ -15,7 +15,7 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true, 'register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/checklist', 'ChecklistController@index')->name('checklist');
